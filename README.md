@@ -110,3 +110,7 @@ ____
 2) GradientsDraughtsman - отрисовка градиентов. Не обязательный компонент, но он позволяет посмотреть направление угловых векторов.
 
 ![image](https://user-images.githubusercontent.com/57954863/164741391-ef5eb5e3-923b-467b-9df9-f207733ed688.png)
+
+____
+## Результат работы
+![image](https://user-images.githubusercontent.com/57954863/164747750-664e8a31-8f78-4822-bf36-33a593333239.png)
