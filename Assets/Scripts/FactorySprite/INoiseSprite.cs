@@ -1,11 +1,10 @@
-using Model;
 using UnityEngine;
 
-namespace FactoryTexture
+namespace FactorySprite
 {
-    public interface INoiseTexture
+    public interface INoiseSprite
     {
-        public Texture2D Texture { get; }
+        public Sprite Sprite { get; }
         public void Update(
             Vector2 leftTop, 
             Vector2 rightTop,

@@ -1,16 +1,16 @@
 using Model;
 using UnityEngine;
 
-namespace FactoryTexture
+namespace FactorySprite
 {
-    public class PerlinNoiseTexture : INoiseTexture
+    public class PerlinNoiseSprite : INoiseSprite
     {
-        public Texture2D Texture => _noise;
+        public Sprite Sprite => Sprite.Create(_noise, new Rect(0.0f, 0.0f, _noise.width, _noise.height), new Vector2(0.5f, 0.5f));
 
         private Texture2D _noise;
         private int _sizeGrid;
 
-        public PerlinNoiseTexture(int sizeGrid)
+        public PerlinNoiseSprite(int sizeGrid)
         {
             _sizeGrid = sizeGrid;
             _noise = new Texture2D(sizeGrid, sizeGrid);
