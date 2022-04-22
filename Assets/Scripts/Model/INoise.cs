@@ -1,6 +1,6 @@
 namespace Model
 {
-    public interface IPerlinNoise
+    public interface INoise
     {
         public float[,] GetResultOfCalculations();
     }

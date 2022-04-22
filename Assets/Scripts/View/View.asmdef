@@ -1,3 +1,16 @@
 {
-	"name": "View"
+    "name": "View",
+    "rootNamespace": "",
+    "references": [
+        "GUID:32202c633026a4745af06c54eb9d57de"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
