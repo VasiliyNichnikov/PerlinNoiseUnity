@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Model
@@ -13,7 +12,7 @@ namespace Model
         {
             _sizeGrid = sizeGrid;
             _gradients = gradients;
-            InitializationOctave();
+            _octave = Utilities.InitializeTwoDimensionalArrayFloat(sizeGrid);
         }
 
         public float[,] GetResultOfCalculations()
@@ -37,19 +36,7 @@ namespace Model
             NormalizationOfOctave(minimum, maximum);
             return _octave;
         }
-
-        private void InitializationOctave()
-        {
-            _octave = new float[_sizeGrid, _sizeGrid];
-            for (int y = 0; y < _sizeGrid; y++)
-            {
-                for (int x = 0; x < _sizeGrid; x++)
-                {
-                    _octave[x, y] = 0.0f;
-                }
-            }
-        }
-
+        
         private float CalculateCellValue(int x, int y)
         {
             Vector2 vLeftTop = Utilities.GetVectorByPointsNormalized(x, y, 0, 0);

@@ -28,5 +28,20 @@ namespace Model
         {
             return new Vector2(x2 - x1, y2 - y1);
         }
+
+        public static float[,] InitializeTwoDimensionalArrayFloat(int sizeGrid)
+        {
+            float[,] array = new float[sizeGrid, sizeGrid];
+            
+            for (int y = 0; y < sizeGrid; y++)
+            {
+                for (int x = 0; x < sizeGrid; x++)
+                {
+                    array[x, y] = 0.0f;
+                }
+            }
+
+            return array;
+        }
     }
 }
